@@ -15,7 +15,7 @@ for /L %%d in (%DIA_INICIO%,1,%DIA_FIN%) do (
     echo Ejecutando procesos para el día %%d → Fecha: !fecha!
 
     echo Ejecutando Carga: !fecha!
-    perl cargar.pl -C1 !fecha!
+    perl cargar.pl -C0 !fecha!
     timeout /t %TIEMPO_ESPERA% /nobreak >nul
 
     echo Ejecutando Calculo: !fecha!
